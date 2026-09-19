@@ -1,0 +1,136 @@
+@model ProjectShowViewModel
+@{
+    ViewData["Title"] = $"{Model.Project.Title} — Bryll Honor";
+}
+<div class="wrap">
+    <partial name="_Flash" />
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/#contents">Contents</a>
+        <span aria-hidden="true">/</span>
+        <span>@Model.Project.Term</span>
+    </nav>
+
+    <article class="sheet">
+        <header class="sheet__header">
+            <div>
+                <p class="sheet__code">@Model.Project.Code</p>
+                <h1 class="sheet__title">@Model.Project.Title</h1>
+            </div>
+            <p class="sheet__term">@Model.Project.Term</p>
+        </header>
+
+        <ul class="spec-list" aria-label="Technologies used">
+            @foreach (var tech in Model.Project.Stack)
+            {
+                <li>@tech</li>
+            }
+        </ul>
+
+        <div class="sheet__body">
+            <figure class="sheet__figure">
+                <img
+                    src="@Model.Project.Thumbnail"
+                    alt="Thumbnail for @Model.Project.Title"
+                    width="400"
+                    height="300" />
+                <figcaption>Fig. 1 — @Model.Project.Title</figcaption>
+            </figure>
+            <div class="sheet__notes">
+                <p>@Model.Project.Description</p>
+                <a
+                    class="stamp-button"
+                    href="@Model.Project.GithubUrl"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View repository
+                </a>
+                <p class="sheet__repo-name">@Model.Project.Repo</p>
+            </div>
+        </div>
+    </article>
+
+    <nav class="sheet-nav">
+        @if (Model.Prev is not null)
+        {
+            <a class="sheet-nav__link" href="/projects/@Model.Prev.Id">
+                <span class="sheet-nav__label">Previous sheet</span>
+                <span class="sheet-nav__title">@Model.Prev.Title</span>
+            </a>
+        }
+        else
+        {
+            <span></span>
+        }
+        @if (Model.Next is not null)
+        {
+            <a class="sheet-nav__link sheet-nav__link--next" href="/projects/@Model.Next.Id">
+                <span class="sheet-nav__label">Next sheet</span>
+                <span class="sheet-nav__title">@Model.Next.Title</span>
+            </a>
+        }
+    </nav>
+
+    <section id="comments" class="notes">
+        <h2 class="notes__title">
+            Comments <span class="notes__count">(@Model.Comments.Count)</span>
+        </h2>
+
+        @if (User.Identity?.IsAuthenticated == true)
+        {
+            <form class="note-form" action="/projects/@Model.Project.Id/comments" method="POST">
+                @Html.AntiForgeryToken()
+                <label for="body">
+                    Commenting as <strong>@User.Identity.Name</strong>
+                </label>
+                <textarea
+                    id="body"
+                    name="Body"
+                    rows="3"
+                    maxlength="600"
+                    required
+                    placeholder="Leave a note about this project..."></textarea>
+                <button type="submit" class="stamp-button">Post comment</button>
+            </form>
+        }
+        else
+        {
+            <p class="notes__login-prompt">
+                <a href="/login?redirect=@Uri.EscapeDataString($"/projects/{Model.Project.Id}#comments")">Log in</a>
+                to leave a comment.
+            </p>
+        }
+
+        @if (Model.Comments.Count == 0)
+        {
+            <p class="notes__empty">No comments yet. Be the first to leave one.</p>
+        }
+        else
+        {
+            <ul class="note-list">
+                @foreach (var comment in Enumerable.Reverse(Model.Comments))
+                {
+                    <li class="note">
+                        <div class="note__meta">
+                            <span class="note__author">@comment.Author</span>
+                            <time class="note__time" datetime="@comment.CreatedAt.ToString("o")">
+                                @comment.CreatedAt.ToLocalTime().ToString("MMM d, yyyy, h:mm tt")
+                            </time>
+                        </div>
+                        <p class="note__body">@comment.Body</p>
+                        @if (User.Identity?.IsAuthenticated == true && User.Identity.Name == comment.Author)
+                        {
+                            <form
+                                class="note__delete"
+                                action="/projects/@Model.Project.Id/comments/@comment.Id/delete"
+                                method="POST">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="link-button link-button--danger">Delete</button>
+                            </form>
+                        }
+                    </li>
+                }
+            </ul>
+        }
+    </section>
+</div>

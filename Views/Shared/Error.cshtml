@@ -1,0 +1,20 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = Model.Title;
+    var stampWord = Model.Status switch
+    {
+        404 => "Void",
+        403 => "Expired",
+        400 => "Rejected",
+        _ => "Error"
+    };
+}
+<div class="wrap wrap--narrow">
+    <section class="error-sheet">
+        <span class="error-stamp">@stampWord</span>
+        <p class="error-sheet__code">Error @Model.Status</p>
+        <h1 class="error-sheet__title">@Model.Title</h1>
+        <p class="error-sheet__message">@Model.Message</p>
+        <a class="stamp-button stamp-button--ghost" href="/">Back to contents</a>
+    </section>
+</div>

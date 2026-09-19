@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="IT Elective Coursework thumbnail">
+  <defs>
+    <pattern id="grid-it-elective-base" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1B2430" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="#ECEFE9"/>
+  <rect width="400" height="300" fill="url(#grid-it-elective-base)"/>
+  <rect x="0" y="0" width="400" height="10" fill="#3B6142"/>
+  <text x="32" y="52" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#3B6142" letter-spacing="0.5">Midterms</text>
+  <text x="368" y="52" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#1B2430" fill-opacity="0.55" text-anchor="end">#08</text>
+  <text x="32" y="118" font-family="'Fraunces', serif" font-size="30" font-weight="600" fill="#1B2430"><tspan x="32" dy="0">IT Elective</tspan><tspan x="32" dy="34">Coursework</tspan></text>
+  <line x1="32" y1="202" x2="368" y2="202" stroke="#1B2430" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="32" y="228" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#1B2430" fill-opacity="0.7">IT_ELECTIVE_BSIT_31E3_HONOR_BRYLL</text>
+  <text x="32" y="252" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#1B2430" fill-opacity="0.5">C# · .NET</text>
+  <circle cx="352" cy="246" r="16" fill="none" stroke="#3B6142" stroke-width="2"/>
+  <path d="M346 246 l4 4 l8 -9" fill="none" stroke="#3B6142" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,40 @@
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Log in — Bryll Honor Portfolio";
+}
+<div class="wrap wrap--narrow">
+    <partial name="_Flash" />
+
+    <section class="access-card">
+        <p class="access-card__eyebrow">Access</p>
+        <h1 class="access-card__title">Log in</h1>
+        <p class="access-card__lede">
+            Comments are limited to signed-in visitors. This portfolio uses one fixed
+            demo account — see the project README for the credentials.
+        </p>
+
+        <form action="/login" method="POST" class="access-form">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="RedirectTo" value="@Model.RedirectTo" />
+
+            <label for="username">Username</label>
+            <input
+                type="text"
+                id="username"
+                name="Username"
+                autocomplete="username"
+                required
+                autofocus />
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="Password"
+                autocomplete="current-password"
+                required />
+
+            <button type="submit" class="stamp-button">Log in</button>
+        </form>
+    </section>
+</div>

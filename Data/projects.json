@@ -1,0 +1,134 @@
+[
+  {
+    "id": "a1-honor-bryll",
+    "term": "Prelims",
+    "code": "BSIT31E3 \u00b7 Activity 1",
+    "title": "Activity 1",
+    "repo": "BSIT31E3_A1_HONOR_BRYLL",
+    "githubUrl": "https://github.com/BryllHonor/BSIT31E3_A1_HONOR_BRYLL",
+    "description": "First graded activity for BSIT 31E3, focused on getting a working project scaffold up in C#/.NET and committing it to source control end to end.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/a1-honor-bryll.svg"
+  },
+  {
+    "id": "a2-honor-bryll",
+    "term": "Prelims",
+    "code": "BSIT31E3 \u00b7 Activity 2",
+    "title": "Activity 2",
+    "repo": "BSIT31E3_A2_HONOR_BRYLL",
+    "githubUrl": "https://github.com/BryllHonor/BSIT31E3_A2_HONOR_BRYLL",
+    "description": "Follow-up activity that builds on Activity 1, applying the next set of BSIT 31E3 lecture topics in a small standalone program.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/a2-honor-bryll.svg"
+  },
+  {
+    "id": "prelim-q1",
+    "term": "Prelims",
+    "code": "BSIT31E3 \u00b7 Quiz 1",
+    "title": "Prelim Quiz 1",
+    "repo": "BSIT_31E3_PRELIM_Q1_HONOR_BRYLL",
+    "githubUrl": "https://github.com/BryllHonor/BSIT_31E3_PRELIM_Q1_HONOR_BRYLL",
+    "description": "Timed prelim quiz submission implementing the programming exercise given in class under exam conditions.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/prelim-q1.svg"
+  },
+  {
+    "id": "prelims-h1",
+    "term": "Prelims",
+    "code": "BSIT31E3 \u00b7 Homework 1",
+    "title": "Prelims Homework 1",
+    "repo": "BSIT-31E3_PRELIMS_H1_HONOR_BRYLL",
+    "githubUrl": "https://github.com/BryllHonor/BSIT-31E3_PRELIMS_H1_HONOR_BRYLL",
+    "description": "Take-home exercise from the prelim period, practicing the core language fundamentals covered that week.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/prelims-h1.svg"
+  },
+  {
+    "id": "prelims-a3",
+    "term": "Prelims",
+    "code": "BSIT31E3 \u00b7 Activity 3",
+    "title": "Prelims Activity 3",
+    "repo": "BSIT31E3_PRELIMS_A3_HONOR_BRYLL",
+    "githubUrl": "https://github.com/BryllHonor/BSIT31E3_PRELIMS_A3_HONOR_BRYLL",
+    "description": "Third prelim activity, capping off the period with a slightly larger program that pulls earlier lessons together.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/prelims-a3.svg"
+  },
+  {
+    "id": "midterm-a1",
+    "term": "Midterms",
+    "code": "IT Elective 2 \u00b7 Activity 1",
+    "title": "Midterm Activity 1",
+    "repo": "IT_ELECTIVE_2_Midterm_A1_Honor_Bryll",
+    "githubUrl": "https://github.com/BryllHonor/IT_ELECTIVE_2_Midterm_A1_Honor_Bryll",
+    "description": "Opening midterm activity for IT Elective 2, moving into the course's new topic block with a fresh solution.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/midterm-a1.svg"
+  },
+  {
+    "id": "midterm-project",
+    "term": "Midterms",
+    "code": "BSIT31E3 \u00b7 Group Project",
+    "title": "Midterm Project",
+    "repo": "BSIT-31E3-MIDTERM--PROJECT-HONOR-CANUA-ROMULO",
+    "githubUrl": "https://github.com/BryllHonor/BSIT-31E3-MIDTERM--PROJECT-HONOR-CANUA-ROMULO",
+    "description": "Group midterm project built with teammates Canua and Romulo \u2014 the largest prelim-to-midterm deliverable, combining multiple features into one application.",
+    "stack": ["C#", ".NET", "Team project"],
+    "thumbnail": "/images/thumbnails/midterm-project.svg"
+  },
+  {
+    "id": "it-elective-base",
+    "term": "Midterms",
+    "code": "IT Elective \u00b7 BSIT 31E3",
+    "title": "IT Elective Coursework",
+    "repo": "IT_ELECTIVE_BSIT_31E3_HONOR_BRYLL",
+    "githubUrl": "https://github.com/BryllHonor/IT_ELECTIVE_BSIT_31E3_HONOR_BRYLL",
+    "description": "General IT Elective repository used to track and submit exercises across the BSIT 31E3 elective track.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/it-elective-base.svg"
+  },
+  {
+    "id": "midterm-q2",
+    "term": "Midterms",
+    "code": "IT Elective 2 \u00b7 Quiz 2",
+    "title": "Midterm Quiz 2",
+    "repo": "IT_ELECTIVE_2_MIDTERM_Q2_Honor_Bryll",
+    "githubUrl": "https://github.com/BryllHonor/IT_ELECTIVE_2_MIDTERM_Q2_Honor_Bryll",
+    "description": "Second midterm quiz for IT Elective 2, a timed exercise checking understanding of the mid-course material.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/midterm-q2.svg"
+  },
+  {
+    "id": "midterm-q3",
+    "term": "Midterms",
+    "code": "IT Elective 2 \u00b7 Quiz 3",
+    "title": "Midterm Quiz 3",
+    "repo": "IT_ELECTIVE_2_MIDTERM_Q3",
+    "githubUrl": "https://github.com/BryllHonor/IT_ELECTIVE_2_MIDTERM_Q3",
+    "description": "Third midterm quiz for IT Elective 2, closing out the quiz series before the midterm exam.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/midterm-q3.svg"
+  },
+  {
+    "id": "midterm-exam-9",
+    "term": "Midterms",
+    "code": "IT Elective 2 \u00b7 Exam 9",
+    "title": "Midterm Exam 9",
+    "repo": "IT_ELECTIVE_2_MIDTERM_EXAM_9_HONOR",
+    "githubUrl": "https://github.com/BryllHonor/IT_ELECTIVE_2_MIDTERM_EXAM_9_HONOR",
+    "description": "Formal midterm exam submission (exam set 9) for IT Elective 2, completed individually under exam conditions.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/midterm-exam-9.svg"
+  },
+  {
+    "id": "prefinal-exam",
+    "term": "Finals",
+    "code": "IT Elective 2 \u00b7 Prefinal Exam",
+    "title": "Prefinal Exam",
+    "repo": "IT_ELECTIVE_2_BSIT-31E3_PREFINAL_EXAM_Honor_Bryll",
+    "githubUrl": "https://github.com/BryllHonor/IT_ELECTIVE_2_BSIT-31E3_PREFINAL_EXAM_Honor_Bryll",
+    "description": "Prefinal exam submission for IT Elective 2, the last checkpoint before the final term \u2014 the most complete solution in the series.",
+    "stack": ["C#", ".NET"],
+    "thumbnail": "/images/thumbnails/prefinal-exam.svg"
+  }
+]

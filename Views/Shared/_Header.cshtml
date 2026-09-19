@@ -1,0 +1,23 @@
+<header class="site-header">
+    <div class="wrap site-header__row">
+        <a class="site-header__mark" href="/">
+            <span class="stamp-mark"><span>BH</span></span>
+            <span class="site-header__mark-text">Bryll Honor</span>
+        </a>
+        <nav class="site-header__nav" aria-label="Primary">
+            <a href="/#contents">Contents</a>
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <span class="site-header__user">Signed in as @User.Identity.Name</span>
+                <form action="/logout" method="POST" class="site-header__logout">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="link-button">Log out</button>
+                </form>
+            }
+            else
+            {
+                <a href="/login">Log in</a>
+            }
+        </nav>
+    </div>
+</header>
